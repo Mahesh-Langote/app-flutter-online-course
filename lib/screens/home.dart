@@ -1,4 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
+// import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:online_course/theme/color.dart';
 import 'package:online_course/utils/data.dart';
@@ -6,6 +6,7 @@ import 'package:online_course/widgets/category_box.dart';
 import 'package:online_course/widgets/feature_item.dart';
 import 'package:online_course/widgets/notification_box.dart';
 import 'package:online_course/widgets/recommend_item.dart';
+import 'package:carousel_slider/carousel_slider.dart' as carousel;
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -147,8 +148,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   _buildFeatured() {
-    return CarouselSlider(
-      options: CarouselOptions(
+    return carousel.CarouselSlider(
+      options: carousel.CarouselOptions(
         height: 290,
         enlargeCenterPage: true,
         disableCenter: true,
